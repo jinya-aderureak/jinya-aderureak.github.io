@@ -1,0 +1,363 @@
+@charset "UTF-8";
+@import url(style.css);
+/* ベース
+---------------------------*/
+body {
+  font-size: 16px;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.inner {
+  max-width: 100%;
+  width: 67%;
+  margin: 0 auto;
+}
+
+/*
+矢印アイコン
+=========================================================*/
+.arrow {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 16px;
+  color: #000;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.arrow::after, .arrow::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.arrow_down::before,
+.arrow_up::before {
+  top: auto;
+  left: auto;
+  bottom: 8px;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* ========================================================
+ページトップに戻るボタン
+=========================================================*/
+#btn-backtotop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  -webkit-transition: bottom 0.2s ease-out;
+  transition: bottom 0.2s ease-out;
+  opacity: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #btn-backtotop {
+    bottom: 10px;
+    right: 5px;
+  }
+}
+
+#btn-backtotop.fadein {
+  opacity: 1;
+}
+
+#btn-backtotop:hover {
+  opacity: .8;
+  bottom: 34px;
+}
+
+@media screen and (max-width: 767px) {
+  #btn-backtotop:hover {
+    bottom: 10px;
+  }
+}
+
+#btn-backtotop:hover::after {
+  -webkit-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 767px) {
+  #btn-backtotop:hover::after {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+#btn-backtotop::after {
+  content: "";
+  display: block;
+  color: #fff;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: #000;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: scale(0.8) rotate(45deg);
+          transform: scale(0.8) rotate(45deg);
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+@media screen and (max-width: 767px) {
+  #btn-backtotop::after {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#btn-backtotop .arrow {
+  top: 72px;
+  left: 13px;
+}
+
+@media screen and (max-width: 767px) {
+  #btn-backtotop .arrow {
+    top: 46px;
+    left: -1px;
+  }
+}
+
+#btn-backtotop .arrow::before {
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  #btn-backtotop .arrow::before {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* ヘッダー
+---------------------------*/
+header {
+  background-color: #D1FAFF;
+  -webkit-box-shadow: 0 0 10px 0 #707070;
+          box-shadow: 0 0 10px 0 #707070;
+}
+
+header h1 {
+  text-align: center;
+  padding-top: 116px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2.5em;
+}
+
+.profile h2 {
+  text-align: center;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  padding-top: 70px;
+  font-size: 2em;
+}
+
+.profile h3 {
+  font-size: 1.4em;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 45px;
+}
+
+.profile_myself {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px 0 70px 100px;
+}
+
+.profile_letter {
+  padding-left: 45px;
+}
+
+@media (max-width: 834px) {
+  .profile {
+    text-align: center;
+  }
+  .profile img {
+    margin-right: 0;
+  }
+  .profile_myself {
+    display: block;
+    padding-left: 0;
+  }
+  .profile_letter {
+    padding: 20px 0 0 0;
+  }
+}
+
+/* 作品ページヘッダー
+---------------------------*/
+.works-header h2 {
+  text-align: center;
+  padding: 30px 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2em;
+}
+
+/* メイン
+---------------------------*/
+main h2 {
+  text-align: center;
+  padding-top: 90px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2em;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+article .Works {
+  margin: 50px 0 0 0;
+  background: #fff;
+  padding: 8px 8px;
+  border: solid 1px #a6a6a6;
+  width: 45%;
+}
+
+article .Works p {
+  padding-top: 25px;
+  color: #000;
+}
+
+article .Works a {
+  text-decoration: none;
+}
+
+article .Works:hover {
+  -webkit-box-shadow: 0 5px 10px #707070;
+          box-shadow: 0 5px 10px #707070;
+  -webkit-transform: translate(0 -5px);
+          transform: translate(0 -5px);
+}
+
+@media (max-width: 834px) {
+  article {
+    display: block;
+  }
+  article .Works {
+    width: 100%;
+  }
+}
+
+/* 作品ページメイン
+---------------------------*/
+.works-inner {
+  max-width: 1280px;
+  width: 63%;
+  margin: 0 auto;
+}
+
+.works-entire h3 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 2em;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.works-entire h3 {
+  font-weight: lighter;
+}
+
+.works-entire .works-image {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.works-entire .works-image img {
+  max-width: 800px;
+}
+
+.works-entire img:hover {
+  -webkit-box-shadow: 0 5px 10px #000;
+          box-shadow: 0 5px 10px #000;
+  -webkit-transform: translate(0 -5px);
+          transform: translate(0 -5px);
+}
+
+.works-entire .works-letter {
+  padding-bottom: 50px;
+}
+
+.works-entire .works-letter h3 {
+  font-size: 1.5em;
+  text-align: left;
+  padding-top: 0;
+  margin-top: 35px;
+  border-left: solid 4px #baf7ff;
+  border-bottom: dotted 2px #baf7ff;
+}
+
+/* フッター
+---------------------------*/
+footer {
+  background-color: #707070;
+  -webkit-box-shadow: 10px 0 0 0 #707070;
+          box-shadow: 10px 0 0 0 #707070;
+  text-align: center;
+}
+
+footer h3 {
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+}
+
+.contact h3 {
+  padding: 30px 0 15px 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2em;
+}
+
+.contact a {
+  color: #fff;
+}
+
+.copyright p {
+  padding: 25px 50px 25px 0;
+  text-align: right;
+}
+/*# sourceMappingURL=style.css.map */
