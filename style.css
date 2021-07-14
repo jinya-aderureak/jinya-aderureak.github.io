@@ -93,7 +93,7 @@ img {
 }
 
 #btn-backtotop:hover::after {
-  -webkit-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 6px 6px 10px 0px rgba(0, 195, 255, 0.4);
           box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
