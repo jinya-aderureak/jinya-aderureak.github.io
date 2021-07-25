@@ -1,0 +1,6 @@
+body {
+    background-image: url("../icon/5.img");  /* 背景画像設定 */
+    background-size: cover; /* 背景画像のサイズを全体にフィットするように設定 */
+    background-attachment: fixed; /* 背景画像をスクロールしても同じ位置になるように設定 */
+    background-position: center center;
+  }
