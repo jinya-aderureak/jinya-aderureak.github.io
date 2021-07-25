@@ -1,0 +1,164 @@
+body{
+  font-family: "MS 明朝",serif;
+}
+.global-nav {
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    display: flex;
+    color: gray;
+    text-align: center;
+    background-color: white;
+    border         : 1px solid #666;
+}
+   
+  .global-nav li{
+    line-height: 60px;
+    width: 100px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .hero{
+      height: 500px;
+      font-size: 200%;
+      text-align: center;
+      vertical-align: middle;
+      border-color: black;
+      border-top: 2px; 
+      border-bottom: 2px; 
+      border  : 1px solid #666;
+      background-image: url("gazou/1.jpeg");
+      
+  }
+
+  section{
+    color: rgb(77, 74, 74);
+    position: relative;
+	font-size: 26px;
+	text-align: center;
+	border-bottom: 5px solid #f6f6f6;
+}
+  .vision div{
+      text-align: left;
+      display: inline-block;
+    height: 50px;
+
+  }
+.vision-texts{
+    vertical-align: top;
+}
+.linkbutton-readmore{
+    height: 40px;
+    width: 250px;
+    font-weight: lighter;
+    text-align: center;
+    border:1px solid black;
+    color: white;
+    background-color: black;
+    padding: 25px 60px;
+} 
+.message-texts{
+  font-size: 150%;
+}
+.service{ 
+    margin         : auto;                 /* サンプル用 中央寄せ */
+    box-sizing     : border-box;           /* 罫線も含む長さ      */
+    background     : rgb(211, 209, 209);                 /* BOXの背景色         */
+    border         : 1px solid rgb(211, 209, 209);       /* 枠線の指定          */
+    width          : 1400px;                /* BOXの幅             */
+    height     : 1450px;                /* BOXの高さ           */
+   }
+   .service-main div{
+    display        : flex;                 /* FlexBox定義         */
+    justify-content: center;               /* 揃えの定義          */
+    flex-wrap : wrap;   
+   }
+   .service-sub div{
+         display        : flex;                 /* FlexBox定義         */
+        justify-content: center;               /* 揃えの定義          */
+        flex-wrap : wrap;                 /* 折り返し定義        */
+        background-color: white;
+   }
+   .service-item{
+    width: 22em;height: 23em; border: solid 20px rgb(211, 209, 209);
+    background-color: white;
+    padding: 0.5%;
+   }
+   .service-div{
+    font-size: 25px;
+    width: 14em;height: 22em; border: solid 20px rgb(211, 209, 209);
+    background-color: white;
+    padding: 0.5%;
+    flex-grow      : 1;                    /* 各BOXを均等に割当て */
+   }
+   .service-icon{
+     padding: 50px;
+   }
+   img.png{
+    
+    width: 100px;
+    height: 100px;
+   }
+  .contact{
+    margin         : auto;                 /* サンプル用 中央寄せ */
+    box-sizing     : border-box;           /* 罫線も含む長さ      */
+    background     : rgb(211, 209, 209);                 /* BOXの背景色         */
+    border         : 1px solid rgb(211, 209, 209);       /* 枠線の指定          */
+    width          : 1200px;                /* BOXの幅             */
+    height     : 350px;   
+  }
+  .contact-main{
+    display: flex;
+    text-align: center;            /* 揃えの定義          */
+    flex-wrap : wrap;   
+  
+  }
+  .tel-hedding{
+    
+    display: inline-block;
+    width:17em;height: 5em; border: solid 1px gray;
+    background-color: rgb(192, 189, 189);
+    padding: 5px;
+    color: white;               /* 文字色 */
+    margin:  10px;              /* 外側の余白 */
+    border-radius:  5px;        /* 角丸指定 */
+    vertical-align: middle;
+  }
+ 
+  .toiawase{
+   line-height: 125px;
+  }
+  .access-map{
+    background-color: skyblue;
+    height: 595px;
+    font-size: 200%;
+    text-align: center;
+    vertical-align: bottom;
+    border-color: black;
+    border-top: 2px; 
+    border-bottom: 2px; 
+    border         : 1px solid #666;
+  }
+  .access-address{
+      text-align: left;
+  }
+footer{
+    text-align: center;
+    color: gray;
+    background-color: rgb(32, 32, 32);
+}
+footer h2{
+    font-size: 30px;
+    height: -100px;
+}
+footer li{
+    height: 100px;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
