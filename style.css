@@ -7,7 +7,10 @@ body {
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.profile2{
+height: 100px;
+width: 400px;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -20,9 +23,6 @@ img {
   margin: 0 auto;
 }
 
-/*
-矢印アイコン
-=========================================================*/
 .arrow {
   position: relative;
   display: inline-block;
@@ -254,6 +254,13 @@ article .Works {
   padding: 8px 8px;
   border: solid 1px #a6a6a6;
   width: 45%;
+}
+article .Works2 {
+  margin: 50px 0 0 0;
+  background: #fff;
+  padding: 8px 8px;
+ 
+  width: 50%;
 }
 
 article .Works p {
