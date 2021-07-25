@@ -161,7 +161,12 @@ header {
   background-color: #c5ffcd;
   -webkit-box-shadow: 0 0 10px 0 #707070;
           box-shadow: 0 0 10px 0 #707070;
+           /*背景画像の設定*/
+    background: url(img/02.img);
+    background-size: cover;
+
 }
+
 
 header h1 {
   text-align: center;
