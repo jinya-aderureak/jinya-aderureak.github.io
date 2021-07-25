@@ -1,0 +1,594 @@
+body{
+  font-family: "MS 明朝",serif;
+  background-color: rgb(2, 2, 82);
+}
+.global-nav {
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    display: flex;
+    color: gray;
+    text-align: center;
+    background-color: white;
+    border         : 1px solid #666;
+}
+   
+  .global-nav li{
+    line-height: 60px;
+    width: 100px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .hero{
+      height: 100px;
+      font-size: 200%;
+      text-align: center;
+      vertical-align: middle;
+      border-color: black;
+      border-top: 2px; 
+      border-bottom: 2px; 
+      border  : 1px solid #666;
+      background-image: url("/gazou/1.jpeg");
+      
+  }
+
+  section{
+    color: rgb(77, 74, 74);
+    position: relative;
+	font-size: 26px;
+	text-align: center;
+	border-bottom: 5px solid #f6f6f6;
+}
+ .section-item button{
+  height: 40px;
+  width: 250px;
+ }
+ 
+.linkbutton-readmore{
+    height: 40px;
+    width: 250px;
+    font-weight: lighter;
+    text-align: center;
+    border:1px solid black;
+    color: white;
+    background-color: black;
+    padding: 25px 60px;
+} 
+.message-texts{
+  font-size: 150%;
+}
+.service{ 
+    margin         : auto;                 /* サンプル用 中央寄せ */
+    box-sizing     : border-box;           /* 罫線も含む長さ      */
+    background     : rgb(211, 209, 209);                 /* BOXの背景色         */
+    border         : 1px solid rgb(211, 209, 209);       /* 枠線の指定          */
+    width          : 1400px;                /* BOXの幅             */
+    height     : 1000px;                /* BOXの高さ           */
+   }
+   .service-main div{
+    display        : flex;                 /* FlexBox定義         */
+    justify-content: center;               /* 揃えの定義          */
+    flex-wrap : wrap;   
+   }
+   .service-sub div{
+         display        : flex;                 /* FlexBox定義         */
+        justify-content: center;               /* 揃えの定義          */
+        flex-wrap : wrap;                 /* 折り返し定義        */
+        background-color: white;
+   }
+   .service-item{
+    width: 11em;height: 12em; border: solid 20px rgb(211, 209, 209);
+    background-color: white;
+    padding: 0.5%;
+   }
+   .service-div{
+    font-size: 25px;
+    width: 14em;height: 22em; border: solid 20px rgb(211, 209, 209);
+    background-color: white;
+    padding: 0.5%;
+    flex-grow      : 1;                    /* 各BOXを均等に割当て */
+   }
+   .service-icon{
+     padding: 10px;
+   }
+   img.png{
+    
+    width: 250px;
+    height: 200px;
+   }
+  .contact{
+    margin         : auto;                 /* サンプル用 中央寄せ */
+    box-sizing     : border-box;           /* 罫線も含む長さ      */
+    background     : rgb(211, 209, 209);                 /* BOXの背景色         */
+    border         : 1px solid rgb(211, 209, 209);       /* 枠線の指定          */
+    width          : 1200px;                /* BOXの幅             */
+    height     : 350px;   
+  }
+  .contact-main{
+    display: flex;
+    text-align: center;            /* 揃えの定義          */
+    flex-wrap : wrap;   
+  
+  }
+  .tel-hedding{
+    
+    display: inline-block;
+    width:17em;height: 5em; border: solid 1px gray;
+    background-color: rgb(192, 189, 189);
+    padding: 5px;
+    color: white;               /* 文字色 */
+    margin:  10px;              /* 外側の余白 */
+    border-radius:  5px;        /* 角丸指定 */
+    vertical-align: middle;
+  }
+ 
+  .toiawase{
+   line-height: 125px;
+  }
+ 
+footer{
+    text-align: center;
+    color: gray;
+    background-color: rgb(228, 228, 228);
+}
+footer h2{
+    font-size: 30px;
+    height: -100px;
+}
+footer li{
+    height: 100px;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner img {
+  width: 100%;
+}
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.popup2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup2.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner2 img {
+  width: 100%;
+}
+
+.close-btn2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn2 i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.popup3 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup3.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner3 img {
+  width: 100%;
+}
+
+.close-btn3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn3 i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+.popup4 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup4.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner4 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner4 img {
+  width: 100%;
+}
+
+.close-btn4 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn4 i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+.popup5 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup5.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner5 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner5 img {
+  width: 100%;
+}
+
+.close-btn5 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn5 i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+.popup6 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup6.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner6 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner6 img {
+  width: 100%;
+}
+
+.close-btn6 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn6 i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+.popup7 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup7.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner7 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner7 img {
+  width: 100%;
+}
+
+.close-btn7 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn7 i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background7 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.popup8 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup8.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner8 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner8 img {
+  width: 100%;
+}
+
+.close-btn8 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn8 i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background8 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+
+
